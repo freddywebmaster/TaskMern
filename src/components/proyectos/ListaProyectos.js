@@ -13,7 +13,7 @@ const ListaProyectos = () => {
         obtenerProyectos();
     }, [])
 
-    if(proyectos.length === 0) return null;
+    if(proyectos.length === 0) return <p>No hay proyectos agrega uno</p>;
 
 
     return ( 
