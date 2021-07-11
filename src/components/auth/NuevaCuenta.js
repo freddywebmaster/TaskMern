@@ -118,7 +118,7 @@ const NuevaCuenta = (props) => {
                         <input
                             type="submit"
                             className="btn btn-primario btn-block"
-                            value="Iniciar Sesion"
+                            value="Crear Cuenta"
                         />
                     </div>
                 </form>

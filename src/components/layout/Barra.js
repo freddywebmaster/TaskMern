@@ -13,14 +13,14 @@ const Barra = () => {
 
     const onClickBtn = () =>{
         cerrarSesion();
-        document.location.reload();
+        // document.location.reload();
     }
     return (
         <header className="app-header">
             {
                 usuario ?
-                <p className="nombre-usuario">
-                    Hola <span>{usuario.nombre}</span>
+                <p className="nombre-usuario mt-1">
+                    Bienvenido <span>{usuario.nombre}</span>
                 </p>
                 :
                 null

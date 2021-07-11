@@ -63,9 +63,6 @@ const AuthState = (props) => {
                 type: OBTENER_USUARIO,
                 payload: respuesta.data.usuario
             })
-
-            usuarioAutenticado();
-            
         } catch (error) {
             dispatch({
                 type: LOGIN_ERROR,
@@ -81,6 +78,7 @@ const AuthState = (props) => {
                 type: LOGIN_EXITOSO,
                 payload: respuesta.data
             })
+            usuarioAutenticado();
         } catch (error) {
             console.log(error);
             const alerta = {

@@ -1,8 +1,8 @@
 :root {
   --blanco: #ffffff;
   --gris1: #edf2f6;
-  --gris2: #2f3848;
-  --gris3: #1a202d;
+  --gris2: #2a9d8f;
+  --gris3: #2a9d8f;
   --negro: #000000;
   --headingFont:'Raleway', sans-serif;
   --textFont:  'Roboto', sans-serif;
@@ -71,6 +71,9 @@ a {
 .btn-primario:hover {
   background: var(--gris3);
 }
+.mt-1{
+  margin-top: 0.5rem;
+}
 .btn-secundario {
   background-color: var(--gris1);
 }
@@ -82,14 +85,14 @@ a {
   background-color: var(--gris2);
 }
 .btn-blank {
-  margin: 0;
-  padding: 0;
+  padding: 0.5rem 1rem;
   display: block;
-  background-color: transparent;
+  color: #edf2f6;
+  background-color: rgb(247, 88, 88);
 }
 .btn-eliminar{
   background-color: rgba(247, 86, 86, 0.5);
-  color: var(--gris3);
+  color: var(--negro);
 }
 .btn-eliminar:hover{
   background-color: rgba(247, 86, 86, 0.7);
@@ -257,11 +260,11 @@ aside  {
 .completo,
 .correcto {
   background-color: rgba(52, 245, 52, 0.5);
-  color: var(--gris3);
+  color: var(--negro);
 }
 .incompleto{
   background-color: rgba(247, 86, 86, 0.5);
-  color: var(--gris3);
+  color: var(--negro);
 }
 .error {
   max-width: 600px;
