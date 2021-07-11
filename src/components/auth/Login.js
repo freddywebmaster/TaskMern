@@ -89,6 +89,9 @@ const Login = (props) => {
                 <Link to={"/nueva-cuenta"} className="enlace-cuenta">
                     Obtener Cuenta
                 </Link>
+                <Link to={"/"} className="enlace-cuenta">
+                    <b>Regresar al Inicio</b>
+                </Link>
             </div>
         </div>
      );

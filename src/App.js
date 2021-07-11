@@ -9,7 +9,7 @@ import AlertaState from './context/alertas/alertaState';
 import AuthState from './context/autenticacion/authState';
 import tokenAuth from './config/tokenAuth'
 import RutaPrivada from './components/rutas/RutaPrivada';
-
+import Home from './components/Home';
 function App() {
   //revisar si hay token
   const token = localStorage.getItem('token');
@@ -23,7 +23,8 @@ function App() {
           <AuthState>
             <Router>
               <Switch>
-                <Route exact path="/" component={Login} />
+                <Route exact path="/" component={Home} />
+                <Route exact path="/login" component={Login} />
                 <Route exact path="/nueva-cuenta" component={NuevaCuenta} />
                 <RutaPrivada exact path="/proyectos" component={Proyectos} />
               </Switch>

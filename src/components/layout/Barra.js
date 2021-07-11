@@ -20,13 +20,13 @@ const Barra = () => {
             {
                 usuario ?
                 <p className="nombre-usuario mt-1">
-                    Bienvenido <span>{usuario.nombre}</span>
+                    Bienvenido <span className="user">{usuario.nombre}</span>
                 </p>
                 :
                 null
             }
             <nav className="nav-principal">
-                <button type="submit" className="btn btn-blank cerrar-sesion" onClick={onClickBtn} >
+                <button type="submit" className="btn-f btn-blank" onClick={onClickBtn} >
                     Cerrar Sesión
                 </button>
             </nav>

@@ -6,7 +6,7 @@ import ListaProyectos from '../proyectos/ListaProyectos';
 const Sidebar = () => {
     return ( 
         <aside>
-            <h1>MERN<span>Task</span></h1>
+            <h1>FS<span>Projects</span></h1>
             <NuevoProyecto/>
 
             <div className="proyectos">

@@ -122,8 +122,11 @@ const NuevaCuenta = (props) => {
                         />
                     </div>
                 </form>
-                <Link to={"/"} className="enlace-cuenta">
+                <Link to={"/login"} className="enlace-cuenta">
                     <b>Ya tienes cuenta?</b> Inicia Sesion!
+                </Link>
+                <Link to={"/"} className="enlace-cuenta">
+                    <b>Regresar al Inicio</b>
                 </Link>
             </div>
         </div>

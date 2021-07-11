@@ -2,7 +2,7 @@
   --blanco: #ffffff;
   --gris1: #edf2f6;
   --gris2: #2a9d8f;
-  --gris3: #2a9d8f;
+  --gris3: #11b4a1;
   --negro: #000000;
   --headingFont:'Raleway', sans-serif;
   --textFont:  'Roboto', sans-serif;
@@ -22,8 +22,12 @@ body {
   font-size: 1.6rem;
   font-family: var(--textFont);
 }
-
-
+img{
+  max-width: 100%;
+}
+input{
+  max-width: 100%;
+}
 h1, h2 {
   font-family: var(--headingFont);
   font-weight: 900;
@@ -51,6 +55,15 @@ a {
 }
 
 /** BOTONES **/
+.btn-f {
+  font-family: var(--headingFont);
+  padding: 1.5rem;
+  font-size: 1.4;
+  font-weight: 400;
+  border-radius: .5rem;
+  border: none;
+  transition: background-color .3s ease;
+}
 .btn {
   margin-top: 2rem;
   font-family: var(--headingFont);
@@ -89,14 +102,18 @@ a {
   display: block;
   color: #edf2f6;
   background-color: rgb(247, 88, 88);
+  font-weight: 600;
+  cursor: pointer;
 }
 .btn-eliminar{
-  background-color: rgba(247, 86, 86, 0.5);
-  color: var(--negro);
+  background-color: rgba(240, 60, 60, 0.6);
+  color: var(--blanco);
+  font-weight: 600;
+  transition: 1s ease;
 }
 .btn-eliminar:hover{
-  background-color: rgba(247, 86, 86, 0.7);
-  color: var(--gris3);
+  background-color: rgba(255, 61, 61, 0.7);
+  transform: scale(1.1);
 }
 @media (min-width: 768px) {
   .contenedor-app {
@@ -366,4 +383,50 @@ aside  {
 .alerta-error {
   background-color: rgb(230, 78, 78);
   color: var(--blanco);
+}
+.user{
+  text-transform: capitalize;
+}
+.cerrar_sesion{
+  margin-top: 0rem!important;
+}
+
+.home{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--gris3);
+  height: 100vh;
+}
+.home h1{
+  color: #edf2f6;
+}
+.home .elem{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn-home {
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  color: #edf2f6;
+  background-color: rgb(247, 88, 88);
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.botones-home{
+  display: flex;
+}
+.botones-home a{
+  margin-right: 1rem;
+}
+.botones-home a:last-child{
+  margin-right: 0rem;
+}
+@media (max-width:768px) {
+  .home{
+    grid-template-columns: repeat(1, 1fr);
+    min-width: 100%;
+  }
 }
