@@ -1,10 +1,9 @@
 # Aplicacion Para Administrar Proyectos Estilo Trello
 Esta aplicacion tiene autenticación para que cada usuario pueda administrar sus tareas o proyectos de una manera amigable,
-se utilizo React para el front end y para el backend cree una API con Node JS y Mongo DB, Asi que al final el proyecto esta construido con las tecnologias MERN.
+se utilizo React para el front end y para el backend cree una API con Node JS y Mongo DB, Asi que al final el proyecto esta construido con las tecnologias MERN. El repo del backend esta Privado por seguridad!
 
 
-##¿Que se puede hacer en la app?
-###El repo del backend esta Privado por seguridad!
+### `¿Que se puede hacer en la app?`
 
 * Crear Usuario
 * Iniciar Sesión
@@ -14,7 +13,7 @@ se utilizo React para el front end y para el backend cree una API con Node JS y 
 * Cambiar Estado de la Tarea
 * Eliminar Tareas
 
-#VISTA PREVIA
+### `VISTA PREVIA`
 ![picture alt](https://firebasestorage.googleapis.com/v0/b/proyectos-607ad.appspot.com/o/task-mern1.png?alt=media&token=39309712-dd83-4560-8141-a9c3303ac597)
 
 ![picture alt](https://firebasestorage.googleapis.com/v0/b/proyectos-607ad.appspot.com/o/task-mern2.png?alt=media&token=222e3b7b-41a9-4152-b828-ada9ea094fb1)
