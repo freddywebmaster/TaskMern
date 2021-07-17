@@ -1,7 +1,18 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom';
-
+import clienteAxios from '../config/axios';
 const Home = () => {
+
+    //Esta peticion es inutil pero la pongo para que al cargar la pagina 
+    //se active el servidor en heroku porque se apaga solo :v
+
+    useEffect(()=>{
+        const activarHeroku = async () =>{
+            await clienteAxios.get('/api/auth');
+        }
+        activarHeroku();
+    },[]);
+
     return ( 
         <div className="home">
             <div className="elem">
